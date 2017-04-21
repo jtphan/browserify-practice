@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jtphan/browserify-practice/issues"
   },
-  "homepage": "https://github.com/jtphan/browserify-practice#readme"
+  "homepage": "https://github.com/jtphan/browserify-practice#readme",
+  "devDependencies": {
+    "domready": "^1.0.8",
+    "webpack": "^2.4.1"
+  }
 }
