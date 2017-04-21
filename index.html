@@ -2,26 +2,25 @@
 
 <html>
 	<title>
-		TESTING HTML FEATURES 
+		PRACTICE 
 	</title>
 
 	<head>		
-		<script language="Javascript" type="text/javascript" src="bundle.js"> </script>
 	</head>
 
 	<body>
 		<div> Test box </div>
-		<form onsubmit="javascript:;" onsubmit=" return urlTest();">
+
+		<form id="form1" onsubmit="return beep.hello();">
 			<input id="textEntry" type="text" class="box" autofocus />
 			<input type="submit" style="visibility: hidden;" />
-		</form>
-		<br> 
+		</form> <br> 
+
+		<div> Response box </div> 
 		<form> 
 			<input id="articleTitle" type="text" class="box"/>
 		</form> 
 
-		<script type="text/javascript"> 
-			urlTest(); 
-		</script>
+		<script language="Javascript" type="text/javascript" src="bundle.js"> </script>
 	</body> 	
 </html>

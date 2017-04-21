@@ -1,22 +1,36 @@
-module.export = function shout(str)
-{
-	return str.toUpperCase() + '!';
-};
+module.exports = {
 
+	hello: function()
+	{
+		console.log('Hello');
+	},
 
-module.export = function urlTest()
-{
-  var output = document.getElementById('textEntry');
-  output.innerHTML = "Hello World!";
-  //
-  var url = document.getElementById("answer");
-  console.log("Something is gonna happen here:",url.value);
+	shout: function(str)
+	{
+		return str.toUpperCase() + '!';
+	},
+
+	test: function()
+	{
+		var output = document.getElementById('textEntry');
+		output.innerHTML = "Hello World!";
+
+		var url = document.getElementById("answer");
+		console.log("Something is gonna happen here:",url.value);
+	},
+
+	testicles: function()
+	{
+		console.log('Making conversion!');
+		document.getElementById("form1").addEventListener('submit',function() {
+		alert("Attempting parse now!");
+		var string = document.getElementById("textEntry").value;
+		document.getElementById("articleTitle").value = string;
+		console.log(string);
+		console.log('Ending');
+		return false; 
+	}); 
+
+	return true; 
+	}
 }
-
-
-var test = function()
-{
-  var url = document.getElementById("answer");
-  console.log("This is the url/text that was entered: ", url.value);
-}
-
